@@ -35,6 +35,7 @@ Servidor: Portal WEB
 Sistema Operativo: GNU/LINUX Debian versión 11.2 
 Hostname: pwebapp01
 Usuario: usuwebapp
+Core:2
 Almacenamiento solicitado: 40GB
 
     - /boot    ->500mb
@@ -50,6 +51,7 @@ Sistema operativo: GNU/LINUX Debian versión 11.2
 Hostname: pwebbd02
 Usuario: usuwebbd
 Almacenamiento solicitado: 40GB
+Core: 2
 
 
     - /boot    ->500mb
@@ -67,7 +69,8 @@ Almacenamiento solicitado: 40GB
     Seguridad:
         a) gestionar puertos de escucha internos de los contenedores y puertos externos a la vm nativa del hipervisor.
         b) Gestionar fw lógicos con las adecuaciones del caso de manera que se gestionen peticiones únicamente desde un segemento de red lógico creado desde docker.
-
+    Red:
+        192.168.3.18 / 192.168.3.19
 
 ----  
 

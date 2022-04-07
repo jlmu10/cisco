@@ -22,6 +22,7 @@ Servidor: Proxy Reverso Externo
 Sistema Operativo: GNU/LINUX Debian versión 11.x 
 Hostname: prvp
 Usuario: usuprvp
+core: 1
 Almacenamiento solicitado: 30GB
 
 Tipo de particionamiento LVM
