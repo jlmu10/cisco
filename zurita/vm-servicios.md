@@ -37,6 +37,13 @@ pass:Vpu53r
     Seguridad:
         a) gestionar puertos de escucha internos de los contenedores y puertos externos a la vm nativa del hipervisor.
         b) Gestionar fw lógicos con las adecuaciones del caso de manera que se gestionen peticiones únicamente desde un segemento de red lógico creado desde docker.
+        
+
+2.- Instalar una máquina virtual en el hipervisor (Servidor DELL Serv02) que contenga SIGEVIC:
+
+En proceso del inventario de aplicaciones y librerías.
+
+
        
    
         
