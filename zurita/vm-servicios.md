@@ -30,6 +30,36 @@ pass:Vpu53r
 
 1.- Instalar una máquina virtual en el hipervisor (Servidor DELL Serv02) que contenga el portal web:
     
+#1
+Servidor: Portal WEB
+Sistema Operativo: GNU/LINUX Debian versión 11.2 
+Hostname: pwebapp01
+Usuario: usuwebapp
+Almacenamiento solicitado: 40GB
+
+    - /boot    ->500mb
+    - /swap    ->3GB
+    - /raiz    ->12GB
+    - /var     ->15GB
+    - /var/log ->7GB
+    - /tmp     ->3GB
+
+#2
+Servidor BD Portal WEB
+Sistema operativo: GNU/LINUX Debian versión 11.2 
+Hostname: pwebbd02
+Usuario: usuwebbd
+Almacenamiento solicitado: 40GB
+
+
+    - /boot    ->500mb
+    - /swap    ->3GB
+    - /raiz    ->12GB
+    - /var     ->15GB
+    - /var/log ->7GB
+    - /tmp     ->3GB
+    
+    
     Docker:
         a) Crear un contenedor (Docker) con el servidor apache y los mods adecuados de manera que gestionen el CMS wordpress, éste contenedor debe resolver peticiones externas provenientes del proxy reverso externo.
         b) Crear un contenedor (Docker) con la base de datos mysql, que sólo escuche peticiones del contenedor al CMS wordpress.
@@ -37,7 +67,9 @@ pass:Vpu53r
     Seguridad:
         a) gestionar puertos de escucha internos de los contenedores y puertos externos a la vm nativa del hipervisor.
         b) Gestionar fw lógicos con las adecuaciones del caso de manera que se gestionen peticiones únicamente desde un segemento de red lógico creado desde docker.
-        
+
+
+----  
 
 2.- Instalar una máquina virtual en el hipervisor (Servidor DELL Serv02) que contenga SIGEVIC:
 
